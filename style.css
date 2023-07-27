@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid{
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    grid-gap: 10px;
+    border-radius: 5px;
+}
+.displayer, .reset{
+    grid-column: 1/3;
+}
+.displayer,
+.increment,
+.decrement,
+.reset{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.displayer{
+    background-color: #333;
+    color: #fff;
+    font-size: 50px;
+}
