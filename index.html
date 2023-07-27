@@ -4,19 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>js counter app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="grid">
-            <div class="displayer"></div>
-            <button class="increment">+</button>
-            <button class="decrement">-</button>
-            <button class="reset">Reset</button>
-        </div>
-    </div>
+    <title>RESTAURANT</title>
+    <style>
+    *{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
 
-    <script src="script.js"></script>
+    }
+    .body .box{
+        margin-right: 100px;
+        width: 28rem;
+    }
+    .image img{
+        width: 25rem;
+        height: 25rem;
+    }
+    .box h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 30px;
+    }
+    .box h2{
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .box p{
+        color: white;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        
+    }
+    .box .btn{
+        color: white;
+        background-color: brown;
+        height: 40px;
+        width: 100px;
+        border-radius: 15px;
+        font-size: 15px;
+        border: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 0;
+        background-color: black;
+        align-items: center;    
+
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    nav .links a{
+        text-decoration: none;
+        padding-right: 10px;
+        margin-right: 60px;
+        color: white;
+    }
+    nav h1{
+        color: red;
+        margin-left: 60px;
+        font-size: 2.5rem;
+
+    }
+    </style>
+</head>
+<body style="background-color:teal">
+    <nav>
+        <section class="company-logo">
+            <h1>AMBIENT</h1>
+        </section>
+        <section class="links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </section>
+    </nav>
+    <section class="body">
+        <section class="box">
+            <h1>Ambient eatery</h1>
+            <h2>Latest food in town</h2>
+            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+            <button class="btn">NEXT</button>
+        </section>
+        <section class="image">
+            <img src="food.jpeg" alt="">
+        </section>
+    </section>
+    
 </body>
 </html>
